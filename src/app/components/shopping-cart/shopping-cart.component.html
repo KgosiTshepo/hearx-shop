@@ -1,0 +1,10 @@
+Cart
+<span class="badge badge-warning badge-pill">
+  {{ numberOfProductsInCart() }}
+</span>
+<app-cart-product
+  *ngFor="let product of products"
+  [product]="product"
+  (productRemoved)="removeProduct($event)"
+>
+</app-cart-product>

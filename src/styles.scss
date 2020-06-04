@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+$primary-color: #192126;
+.bg-light {
+  background-color: $primary-color !important;
+}
+.navbar-light .navbar-text {
+  color: white !important;
+}
+.sticky-top {
+  top: 80px;
+}
+body {
+  // padding: 0;
+  margin: 0;
+  padding-top: 80px;
+  font-family: "Roboto", sans-serif;
+  background-color: #eceff1;
+}
+
+.navbar-light .navbar-text {
+  color: white !important;
+}

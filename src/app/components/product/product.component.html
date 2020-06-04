@@ -1,0 +1,43 @@
+<div class="card" style="width: 15rem;">
+  <img [src]="product.image" alt="{{ product.name }}" />
+  <div class="card-body">
+    <h5 class="card-title">{{ product.name }}</h5>
+    <p class="card-text">R{{ product.price }}.00</p>
+  </div>
+  <div class="card-footer">
+    <!-- <div class="button-grid">
+      <span></span> -->
+    <button
+      *ngIf="showBtn"
+      class="btn btn-secondary btn-block"
+      (click)="addProductToCart(product)"
+      (click)="SetBtnState()"
+    >
+      {{ btnText }}
+    </button>
+    <div class="number-input" *ngIf="showQtyInCart">
+      <div (click)="SetBtnState()">
+        <button
+          class="btn btn-secondary btn-block"
+          onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+        ></button>
+      </div>
+      <input
+        type="number"
+        value="product"
+        min="0"
+        (ngModelChange)="modelChanged()"
+      />
+      <div (click)="SetBtnState()">
+        <button
+          class="btn btn-secondary btn-block"
+          onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+          class="plus"
+          (click)="addProductToCart(product)"
+        ></button>
+      </div>
+    </div>
+    <!-- <span></span>
+    </div> -->
+  </div>
+</div>

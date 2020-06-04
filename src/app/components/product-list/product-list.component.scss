@@ -1,0 +1,39 @@
+h1 {
+  text-align: center;
+}
+
+.wrap {
+  max-width: 1140px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.grid-item {
+  width: calc((100% - 24px * 4) / 4);
+  margin-top: 24px;
+  margin-right: 24px;
+  float: left;
+}
+
+grid-item:nth-child(3n + 3) {
+  margin-right: 0;
+  float: right;
+}
+
+@media only screen and (max-width: 880px) {
+  .grid-item {
+    width: calc((100% - 24px * 3) / 3);
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .grid-item {
+    width: calc((100% - 24px * 2) / 2);
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .grid-item {
+    width: calc((100% - 24px * 1) / 1);
+  }
+}

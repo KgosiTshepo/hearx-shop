@@ -1,0 +1,4 @@
+<div *ngIf="product">
+    <div>{{product.name}}</div>
+    <input type="number" [(ngModel)]="product.quantity" min="0" (ngModelChange)="modelChanged()" />
+</div>

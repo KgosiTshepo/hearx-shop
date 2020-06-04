@@ -1,0 +1,11 @@
+<div class="four-col-grid">
+  <div class="wrap">
+    <div class="grid-item" *ngFor="let product of products">
+      <app-product
+        [product]="product"
+        (productAdded)="addProductToCart($event)"
+      >
+      </app-product>
+    </div>
+  </div>
+</div>
