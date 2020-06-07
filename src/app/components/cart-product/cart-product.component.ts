@@ -7,7 +7,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 })
 export class CartProductComponent {
 	@Input('product') product: any;
-	@Output('product') productRemoved = new EventEmitter();
+	@Output('productRemoved') productRemoved = new EventEmitter();
 
 	constructor() { }
 

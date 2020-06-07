@@ -28,23 +28,23 @@ export class ProductListComponent implements OnInit {
 		this.productRemoved.emit(product);
 	};
 
-	public sortTableName = () => {
-		if (this.NameSort == "Asc") {
-			this.products.sort((a, b) => a.name.localeCompare(b.name));
-			this.NameSort = "Desc";
-		} else if (this.NameSort == "Desc") {
-			this.products.sort((a, b) => b.name.localeCompare(a.name));
-			this.NameSort = "Asc";
-		}
-	};
+	// public sortTableName = () => {
+	// 	if (this.NameSort == "Asc") {
+	// 		this.products.sort((a, b) => a.name.localeCompare(b.name));
+	// 		this.NameSort = "Desc";
+	// 	} else if (this.NameSort == "Desc") {
+	// 		this.products.sort((a, b) => b.name.localeCompare(a.name));
+	// 		this.NameSort = "Asc";
+	// 	}
+	// };
 
-	public sortTablePrice = () => {
-		if (this.priceSort == "Asc") {
-			this.products.sort((a, b) => (a.price > b.price) ? 1 : -1);
-			this.priceSort = "Desc";
-		} else if (this.priceSort == "Desc") {
-			this.products.sort((a, b) => (a.price < b.price) ? 1 : -1);
-			this.priceSort = "Asc";
-		}
-	};
+	// public sortTablePrice = () => {
+	// 	if (this.priceSort == "Asc") {
+	// 		this.products.sort((a, b) => (a.price > b.price) ? 1 : -1);
+	// 		this.priceSort = "Desc";
+	// 	} else if (this.priceSort == "Desc") {
+	// 		this.products.sort((a, b) => (a.price < b.price) ? 1 : -1);
+	// 		this.priceSort = "Asc";
+	// 	}
+	// };
 }
